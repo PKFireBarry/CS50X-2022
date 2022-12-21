@@ -1,0 +1,80 @@
+body
+{
+    background-color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    /*background-image: url('https://source.unsplash.com/random');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: move-background 60s linear infinite;
+}
+@keyframes move-background {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+
+h1, h2, h3, h4, h5, h6
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 50px;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px grey;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px grey;
+    margin: auto;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    }
+
+li {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    }
+
+
+li a
+{   width: auto;
+    margin: 0 10px;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    border: grey 5px;
+
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+a.article-link {
+    margin-bottom: 10px;
+    font-size: 24px;
+    }
+
+footer{
+    text-align: center;
+    padding: 50px;
+}

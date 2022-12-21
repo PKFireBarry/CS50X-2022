@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Latest News Headlines{% endblock %}
+
+
+{% block body %}
+<h1>Latest News Headlines For {{ date }}</h1>
+<div class="container">
+<p>A news aggregation platform that allows users to browse and search for articles from multiple sources. My Web app is designed to be user-friendly and easy to navigate, with a clean and modern interface that allows users to quickly find the articles they are interested in on mobile or desktop effectively. Here are the latest news headlines for today from United States media companies for {{ date }}. Click on the links in the list to read the full article. Articles update once a day at midnight!</p>
+</div>
+<ul class ="list-group">
+    {% for headline in headlines %}
+        <!--img src="{{ headline.urlToImage }}" alt="{{ headline.title }}" width="100" height="100"-->
+        <li><a  href="{{ headline.url }}"
+                title="{{ headline.description }}"
+                class="list-group-item">{{ headline.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
