@@ -1,0 +1,89 @@
+ /*header centering*/
+.header {
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Links - change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .column {
+    float: left;
+  }
+
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Add a card effect for articles */
+.card {
+    background-color: gray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: gray;
+    min-height: 100vh;
+
+
+}
+
+div {
+
+    background-color: gray;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    width: 75%;
+}
+
