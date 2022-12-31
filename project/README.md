@@ -11,9 +11,9 @@
 ## Getting Started
 
 To get started install the dependencies:
-pip/pip3 install requests
-pip/pip3 install Flask
-pip/pip3 install datetime
+- pip/pip3 install requests
+- pip/pip3 install Flask
+- pip/pip3 install datetime
 
 Then, run the development server:
 export FLASK_APP=app
